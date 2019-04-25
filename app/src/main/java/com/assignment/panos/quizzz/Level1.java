@@ -1,4 +1,4 @@
-package com.assignment.panos.quizzz;
+package com.assignment.gaurs.quizzz;
 
 import android.app.Activity;
 import android.content.Intent;
@@ -9,9 +9,6 @@ import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import android.widget.TextView;
 import android.widget.Toast;
-
-import com.assignment.panos.quizzz.R;
-
 import java.util.List;
 public class Level1 extends Activity{
 
@@ -41,7 +38,7 @@ public class Level1 extends Activity{
         butNext = (Button) findViewById(R.id.next);
         res = (TextView) findViewById(R.id.textView3);
         setQuestionView();
-        String name = "Level 1";
+        String name = "ED5042";
         textView.setText(name);
         startService(intent1);
         res.setText("Your Score : "+score);
@@ -55,32 +52,10 @@ public class Level1 extends Activity{
                         score++;
                         res.setText("Your score : " + score);
                     }
-                    if ((qid == 5) || (qid == 10)||(qid==15)||(qid==20)||(qid==25)||(qid==30)||(qid==35)) {
+       /*             if ((qid == 5) || (qid == 10)||(qid==15)||(qid==20)||(qid==25)||(qid==30)||(qid==35)) {
                         Toast.makeText(Level1.this, "Final Score For Last Level Was: " + score, Toast.LENGTH_SHORT).show();
-                        if(qid==5){
-                            textView.setText("LEVEL 2");
-                        }else
-                        if(qid==10){
-                            textView.setText("LEVEL 3");
-                        }else
-                        if(qid==15){
-                            textView.setText("LEVEL 4");
-                        }else
-                        if(qid==20){
-                            textView.setText("LEVEL 5");
-                        }else
-                        if(qid==25){
-                            textView.setText("LEVEL 6");
-                        }else
-                        if(qid==30){
-                            textView.setText("LEVEL 7");
-                        }else
-                        if(qid==35){
-                            textView.setText("LEVEL 8");
-                        }
                         grp.clearCheck();
-                    }
-
+                    }*/
                     if (qid < 40) {
                         currentQ = quesList.get(qid);
                         setQuestionView();
@@ -103,6 +78,7 @@ public class Level1 extends Activity{
         if(qid==40){
             qid=0;
         }
+
     }
     private void setQuestionView()
     {
@@ -111,6 +87,6 @@ public class Level1 extends Activity{
         rdb.setText(currentQ.getOPTB());
         rdc.setText(currentQ.getOPTC());
         rdd.setText(currentQ.getOPTD());
-        qid++;
+        qid++;/*could add in randomiser here */
     }
 }
