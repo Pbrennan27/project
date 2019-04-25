@@ -39,7 +39,7 @@ public class MainScreen extends AppCompatActivity {
             Toast.makeText(MainScreen.this, ""+e.getMessage(), Toast.LENGTH_SHORT).show();
         }
         try {
-            one.setOnClickListener(new View.OnClickListener() {
+            two.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
 
