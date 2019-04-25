@@ -38,6 +38,22 @@ public class MainScreen extends AppCompatActivity {
         }catch (Exception e){
             Toast.makeText(MainScreen.this, ""+e.getMessage(), Toast.LENGTH_SHORT).show();
         }
-       
+        try {
+            one.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+
+                    Intent intent = new Intent(MainScreen.this, Level1.class);
+                    startActivity(intent);
+                }
+            });
+            if(score==0){
+                Toast.makeText(MainScreen.this, "Let's Start!!", Toast.LENGTH_SHORT).show();
+            }else {
+                Toast.makeText(MainScreen.this, "Congrats! You have scored : " + score, Toast.LENGTH_SHORT).show();
+            }
+        }catch (Exception e){
+            Toast.makeText(MainScreen.this, ""+e.getMessage(), Toast.LENGTH_SHORT).show();
+        }
         }
     }
