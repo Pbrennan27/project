@@ -1,5 +1,5 @@
 package com.assignment.panos.quizzz;
-
+/* Reference https://androidclarified.com/android-example-alarm-manager-complete-working/ */
 
 import android.app.Activity;
 
@@ -15,6 +15,7 @@ import android.view.View;
 
 import android.view.View.OnClickListener;
 
+import android.widget.Button;
 import android.widget.TextView;
 
 import android.widget.TimePicker;
@@ -32,7 +33,7 @@ import java.util.Calendar;
 public class AlarmActivity extends Activity {
 
 
-
+    Button off = (Button) findViewById(R.id.alarmStop); /* Alarm Stop Button*/
   private AlarmManager alarmManager;
 
     private PendingIntent pendingIntent;
@@ -50,7 +51,6 @@ public class AlarmActivity extends Activity {
         return inst;
 
     }
-    /*test*/
 
 
 
@@ -106,9 +106,7 @@ public class AlarmActivity extends Activity {
 
                     if (alarmToggle.isChecked()) {
 
-                        Toast.makeText(getApplicationContext(), "Alarm On",
-
-                                Toast.LENGTH_SHORT).show();
+                        Toast.makeText(getApplicationContext(), "Alarm On", Toast.LENGTH_SHORT).show();
 
                         Calendar calendar = Calendar.getInstance();
 
@@ -133,9 +131,7 @@ public class AlarmActivity extends Activity {
                         // A PendingIntent specifies an action to take in the
                         // future
 
-                        pendingIntent = PendingIntent.getBroadcast(
-
-                                AlarmActivity.this, 0, myIntent, 0);
+                        pendingIntent = PendingIntent.getBroadcast(AlarmActivity.this, 0, myIntent, 0);
 
 
 
@@ -151,9 +147,7 @@ public class AlarmActivity extends Activity {
 
                         alarmManager.cancel(pendingIntent);
 
-                        Toast.makeText(getApplicationContext(), "Alarm Off",
-
-                                Toast.LENGTH_SHORT).show();
+                        Toast.makeText(getApplicationContext(), "Alarm Off", Toast.LENGTH_SHORT).show();
 
                         setAlarmText("");
 
@@ -167,7 +161,6 @@ public class AlarmActivity extends Activity {
             }
 
         });
-
     }
 
 
