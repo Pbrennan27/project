@@ -8,7 +8,7 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     android:background="@drawable/quizlevel"
-    tools:context="com.assignment.panos.quizzz.Level1">
+    tools:context="com.assignment.panos.quizzz.">
 
     <TextView
         android:layout_width="wrap_content"
@@ -34,43 +34,45 @@
         android:layout_alignParentEnd="true" />
 
     <RadioGroup
-        android:layout_width="match_parent"
-        android:layout_height="175dp"
+        android:id="@+id/radioGroup"
+        android:layout_width="715dp"
+        android:layout_height="177dp"
         android:layout_below="@+id/textView2"
         android:layout_alignParentStart="true"
-        android:id="@+id/radioGroup">
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="-64dp">
 
         <RadioButton
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textColor="@android:color/white"
             android:id="@+id/radioButton"
-            android:textSize="21dp"
-            android:checked="false" />
-
-        <RadioButton
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:checked="false"
             android:textColor="@android:color/white"
+            android:textSize="21dp" />
+
+        <RadioButton
             android:id="@+id/radioButton2"
-            android:textSize="21dp"
-            android:checked="false" />
-
-        <RadioButton
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:checked="false"
             android:textColor="@android:color/white"
+            android:textSize="21dp" />
+
+        <RadioButton
             android:id="@+id/radioButton3"
-            android:textSize="21dp"
-            android:checked="false" />
-
-        <RadioButton
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textSize="21dp"
+            android:checked="false"
             android:textColor="@android:color/white"
+            android:textSize="21dp" />
+
+        <RadioButton
             android:id="@+id/radioButton4"
-            android:checked="false" />
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="false"
+            android:textColor="@android:color/white"
+            android:textSize="21dp" />
     </RadioGroup>
 
     <TextView
