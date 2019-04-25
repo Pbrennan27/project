@@ -12,11 +12,13 @@ import com.assignment.panos.quizzz.R;
 
 public class MainScreen extends AppCompatActivity {
     Button one;
+    Button two;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main_screen);
         one = (Button) findViewById(R.id.button);
+        two = (Button) findViewById(R.id.button1); /* New game button */
 
         int score =getIntent().getIntExtra("score", 0);
         try {
@@ -35,6 +37,15 @@ public class MainScreen extends AppCompatActivity {
             }
         }catch (Exception e){
             Toast.makeText(MainScreen.this, ""+e.getMessage(), Toast.LENGTH_SHORT).show();
+        }
+        try {
+            two.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    Intent intent = new Intent(MainScreen.this, Level1.class);
+                    startActivity(intent);
+                }
+            });
         }
     }
 }
