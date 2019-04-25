@@ -33,7 +33,7 @@ public class AlarmActivity extends Activity {
 
 
 
-    AlarmManager alarmManager;
+  private AlarmManager alarmManager;
 
     private PendingIntent pendingIntent;
 
@@ -84,11 +84,13 @@ public class AlarmActivity extends Activity {
 
 
 
+
+
         // use alarm service
 
         alarmManager = (AlarmManager) getSystemService(ALARM_SERVICE);
 
-        // toggle button click listner
+        // toggle button click listener
 
         alarmToggle.setOnClickListener(new OnClickListener() {
 
@@ -129,7 +131,6 @@ public class AlarmActivity extends Activity {
 
 
                         // A PendingIntent specifies an action to take in the
-
                         // future
 
                         pendingIntent = PendingIntent.getBroadcast(
@@ -159,9 +160,6 @@ public class AlarmActivity extends Activity {
                     }
 
                 } catch (Exception ex) {
-
-
-
                 }
 
 
