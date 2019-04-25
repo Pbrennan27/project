@@ -50,6 +50,7 @@ public class AlarmActivity extends Activity {
         return inst;
 
     }
+    /*test*/
 
 
 
