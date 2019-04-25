@@ -8,9 +8,6 @@ import android.support.annotation.Nullable;
 
 import com.assignment.panos.quizzz.R;
 
-/**
- * Created by gaurs on 6/15/2016.
- */
 public class SongService  extends Service implements MediaPlayer.OnCompletionListener{
 
     MediaPlayer mp;

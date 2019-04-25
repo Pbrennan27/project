@@ -52,10 +52,6 @@ public class Level1 extends Activity{
                         score++;
                         res.setText("Your score : " + score);
                     }
-       /*             if ((qid == 5) || (qid == 10)||(qid==15)||(qid==20)||(qid==25)||(qid==30)||(qid==35)) {
-                        Toast.makeText(Level1.this, "Final Score For Last Level Was: " + score, Toast.LENGTH_SHORT).show();
-                        grp.clearCheck();
-                    }*/
                     if (qid < 40) {
                         currentQ = quesList.get(qid);
                         setQuestionView();
