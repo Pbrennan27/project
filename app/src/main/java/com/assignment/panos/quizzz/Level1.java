@@ -10,7 +10,7 @@ import android.widget.RadioGroup;
 import android.widget.TextView;
 import android.widget.Toast;
 import java.util.List;
-public class Quiz extends Activity{
+public class Level1 extends Activity{
 
     List<Question> quesList;
     static int score=0;
@@ -28,7 +28,7 @@ public class Quiz extends Activity{
         DatabaseCreate db = new DatabaseCreate(this);
         quesList = db.getAllQuestions();
         currentQ = quesList.get(qid);
-        final Intent intent1=new Intent(Quiz.this,SongService.class);
+        final Intent intent1=new Intent(Level1.this,SongService.class);
         txtQuestion = (TextView) findViewById(R.id.textView2);
         textView = (TextView) findViewById(R.id.textView);
         rda = (RadioButton) findViewById(R.id.radioButton);
@@ -59,7 +59,7 @@ public class Quiz extends Activity{
                     else{
                         Bundle b=new Bundle();
                         b.putInt("score", score);
-                        Intent i1=new Intent(Quiz.this, MainScreen.class);
+                        Intent i1=new Intent(Level1.this, MainScreen.class);
                         i1.putExtras(b);
                         stopService(intent1);
                         finish();
@@ -67,7 +67,7 @@ public class Quiz extends Activity{
                         startActivity(i1);
                     }
                 } catch (Exception e) {
-                    Toast.makeText(Quiz.this, "" + e.getMessage(), Toast.LENGTH_SHORT).show();
+                    Toast.makeText(Level1.this, "" + e.getMessage(), Toast.LENGTH_SHORT).show();
                 }
             }
         });
