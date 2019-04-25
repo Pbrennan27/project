@@ -33,7 +33,7 @@ import java.util.Calendar;
 public class AlarmActivity extends Activity {
 
 
-    Button off = (Button) findViewById(R.id.alarmStop); /* Alarm Stop Button*/
+    //Button off = (Button) findViewById(R.id.alarmStop); /* Alarm Stop Button*/
   private AlarmManager alarmManager;
 
     private PendingIntent pendingIntent;
