@@ -1,4 +1,4 @@
-package com.assignment.gaurs.quizzz;
+package com.assignment.panos.quizzz;
 
 import android.app.Activity;
 import android.content.Intent;
@@ -9,6 +9,9 @@ import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import com.assignment.panos.quizzz.R;
+
 import java.util.List;
 public class Level1 extends Activity{
 

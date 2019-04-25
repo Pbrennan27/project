@@ -1,10 +1,12 @@
-package com.assignment.gaurs.quizzz;
+package com.assignment.panos.quizzz;
 
 import android.app.Service;
 import android.content.Intent;
 import android.media.MediaPlayer;
 import android.os.IBinder;
 import android.support.annotation.Nullable;
+
+import com.assignment.panos.quizzz.R;
 
 /**
  * Created by gaurs on 6/15/2016.

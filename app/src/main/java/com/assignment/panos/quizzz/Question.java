@@ -1,4 +1,4 @@
-package com.assignment.gaurs.quizzz;
+package com.assignment.panos.quizzz;
 
 public class Question {
         private int ID;

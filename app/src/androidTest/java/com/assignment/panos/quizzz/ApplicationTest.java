@@ -1,4 +1,4 @@
-package com.assignment.gaurs.quizzz;
+package com.assignment.panos.quizzz;
 
 import android.app.Application;
 import android.test.ApplicationTestCase;
