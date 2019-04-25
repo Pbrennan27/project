@@ -38,14 +38,6 @@ public class MainScreen extends AppCompatActivity {
         }catch (Exception e){
             Toast.makeText(MainScreen.this, ""+e.getMessage(), Toast.LENGTH_SHORT).show();
         }
-        try {
-            two.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View view) {
-                    Intent intent = new Intent(MainScreen.this, Level1.class);
-                    startActivity(intent);
-                }
-            });
+       
         }
     }
-}
