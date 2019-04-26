@@ -104,7 +104,7 @@ public class AlarmActivity extends Activity {
 
                 try {
 
-                    if (alarmToggle.isChecked()) {
+                    while (alarmToggle.isChecked()) {
 
                         Toast.makeText(getApplicationContext(), "Alarm On", Toast.LENGTH_SHORT).show();
 
