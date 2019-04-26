@@ -7,8 +7,12 @@ import android.view.MenuInflater;
 import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
+import android.support.v7.app.AppCompatActivity;
+import android.os.Bundle;
+import android.view.Menu;
+import android.view.MenuItem;
+import android.widget.Toast;
 
-import com.assignment.panos.quizzz.R;
 
 
 public class MainScreen extends AppCompatActivity {
@@ -52,10 +56,36 @@ public class MainScreen extends AppCompatActivity {
             Toast.makeText(MainScreen.this, ""+e.getMessage(), Toast.LENGTH_SHORT).show();
         }
         }
-        @Override
-        public boolean onCreateOptionsMenu(Menu menu){
-            MenuInflater inflater = getMenuInflater();
-            inflater.inflate(R.menu.main_menu,menu);
-            return true
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        getMenuInflater().inflate(R.menu.options_menu, menu);
+        return true;
+    }
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        Toast.makeText(this, "Selected Item: " +item.getTitle(), Toast.LENGTH_SHORT).show();
+        switch (item.getItemId()) {
+            case R.id.search_item:
+                // do your code
+                return true;
+            case R.id.upload_item:
+                // do your code
+                return true;
+            case R.id.copy_item:
+                // do your code
+                return true;
+            case R.id.print_item:
+                // do your code
+                return true;
+            case R.id.share_item:
+                // do your code
+                return true;
+            case R.id.bookmark_item:
+                // do your code
+                return true;
+            default:
+                return super.onOptionsItemSelected(item);
         }
+    }
     }
