@@ -68,7 +68,8 @@ public class MainScreen extends AppCompatActivity {
         switch (item.getItemId()) {
             case R.id.new_game:
                 // do your code
-                Toast.makeText(getApplicationContext(),"Item 1 Selected",Toast.LENGTH_LONG).show();
+                Toast.makeText(getApplicationContext(),"App Created by Panos Brennan-Andreou" +
+                        "Student ID: 16158687",Toast.LENGTH_LONG).show();
                 return true;
             case R.id.alarm:
                 // do your code
