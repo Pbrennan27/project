@@ -66,7 +66,7 @@ public class MainScreen extends AppCompatActivity {
     public boolean onOptionsItemSelected(MenuItem item) {
         Toast.makeText(this, "Selected Item: " +item.getTitle(), Toast.LENGTH_SHORT).show();
         switch (item.getItemId()) {
-            case R.id.search_item:
+           /* case R.id.search_item:
                 // do your code
                 return true;
             case R.id.upload_item:
@@ -75,7 +75,7 @@ public class MainScreen extends AppCompatActivity {
             case R.id.copy_item:
                 // do your code
                 return true;
-            case R.id.print_item:
+            */case R.id.print_item:
                 // do your code
                 return true;
             case R.id.share_item:
