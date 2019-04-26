@@ -40,7 +40,7 @@ public class AlarmReceiver extends WakefulBroadcastReceiver // BroadcastReceiver
 
             AlarmActivity inst = AlarmActivity.instance();
 
-            inst.setAlarmText("Alarm! Wake up! Wake up!");
+            inst.setAlarmText("Times Up!");
 
 
 
@@ -67,7 +67,8 @@ public class AlarmReceiver extends WakefulBroadcastReceiver // BroadcastReceiver
             Ringtone ringtone = RingtoneManager.getRingtone(context, alarmUri);
 
            ringtone.play();
-           // ringtone.stop();
+           wait(5000);
+           ringtone.stop();
 
 
             // this will send a notification message
