@@ -141,7 +141,7 @@ public class AlarmActivity extends Activity {
 
                                 calendar.getTimeInMillis(), pendingIntent);
 
-                    } else {
+                    } //else {
 
                         // Cancel alarm
 
@@ -151,7 +151,7 @@ public class AlarmActivity extends Activity {
 
                         setAlarmText("");
 
-                    }
+                 //   }
 
                 } catch (Exception ex) {
                 }
