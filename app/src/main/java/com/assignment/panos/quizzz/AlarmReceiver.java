@@ -66,8 +66,8 @@ public class AlarmReceiver extends WakefulBroadcastReceiver // BroadcastReceiver
 
             Ringtone ringtone = RingtoneManager.getRingtone(context, alarmUri);
 
-          //  ringtone.play();
-            ringtone.stop();
+           ringtone.play();
+           // ringtone.stop();
 
 
             // this will send a notification message
