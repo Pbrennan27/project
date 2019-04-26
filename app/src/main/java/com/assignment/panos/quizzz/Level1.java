@@ -77,7 +77,7 @@ public class Level1 extends Activity{
             }
         });
         if(qid==40){
-            Context context;
+            Context context = null;
             try {
                 OutputStreamWriter outputStreamWriter = new OutputStreamWriter(context.openFileOutput("scores.txt", Context.MODE_PRIVATE));
                 outputStreamWriter.write(score);
