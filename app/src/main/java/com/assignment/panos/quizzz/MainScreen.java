@@ -3,6 +3,7 @@ package com.assignment.panos.quizzz;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.view.MenuInflater;
 import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
@@ -50,5 +51,11 @@ public class MainScreen extends AppCompatActivity {
         }catch (Exception e){
             Toast.makeText(MainScreen.this, ""+e.getMessage(), Toast.LENGTH_SHORT).show();
         }
+        }
+        @Override
+        public boolean onCreateOptionsMenu(Menu menu){
+            MenuInflater inflater = getMenuInflater();
+            inflater.inflate(R.menu.main_menu,menu);
+            return true
         }
     }
