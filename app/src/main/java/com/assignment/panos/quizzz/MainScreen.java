@@ -66,7 +66,7 @@ public class MainScreen extends AppCompatActivity {
     public boolean onOptionsItemSelected(MenuItem item) {
         Toast.makeText(this, "Selected Item: " +item.getTitle(), Toast.LENGTH_SHORT).show();
         switch (item.getItemId()) {
-            */case R.id.new_game:
+            case R.id.new_game:
                 // do your code
                 return true;
             case R.id.alarm:
