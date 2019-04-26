@@ -4,4 +4,6 @@
         android:title="New Game" />
     <item android:id="@+id/alarm"
         android:title="Alarm" />
+    <item android:id="@+id/about"
+        android:title="About" />
 </menu>
