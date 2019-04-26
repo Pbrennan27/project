@@ -1,14 +1,19 @@
 package com.assignment.panos.quizzz;
 
 import android.app.Activity;
+import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import java.io.IOException;
+import java.io.OutputStreamWriter;
 import java.util.List;
 public class Level1 extends Activity{
 
@@ -72,6 +77,15 @@ public class Level1 extends Activity{
             }
         });
         if(qid==40){
+            Context context;
+            try {
+                OutputStreamWriter outputStreamWriter = new OutputStreamWriter(context.openFileOutput("scores.txt", Context.MODE_PRIVATE));
+                outputStreamWriter.write(score);
+                outputStreamWriter.close();
+            }
+            catch (IOException e) {
+                Log.e("Exception", "File write failed: " + e.toString());
+            }
             qid=0;
         }
 
