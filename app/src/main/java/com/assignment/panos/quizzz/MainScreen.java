@@ -66,24 +66,15 @@ public class MainScreen extends AppCompatActivity {
     public boolean onOptionsItemSelected(MenuItem item) {
         Toast.makeText(this, "Selected Item: " +item.getTitle(), Toast.LENGTH_SHORT).show();
         switch (item.getItemId()) {
-           /* case R.id.search_item:
+            */case R.id.new_game:
                 // do your code
                 return true;
-            case R.id.upload_item:
+            case R.id.alarm:
                 // do your code
                 return true;
-            case R.id.copy_item:
+           // case R.id.bookmark_item:
                 // do your code
-                return true;
-            */case R.id.print_item:
-                // do your code
-                return true;
-            case R.id.share_item:
-                // do your code
-                return true;
-            case R.id.bookmark_item:
-                // do your code
-                return true;
+             //   return true;
             default:
                 return super.onOptionsItemSelected(item);
         }
